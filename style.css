@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.window {
+    width: 400px;
+    height: 300px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+} 
+.images > img {
+    position: absolute;
+    top: 0;
+    transition: all 0.3s;
+}
+.images > img:nth-child(1) {
+    z-index: 1;
+}
+img.current {
+    transform: translateX(0);
+    z-index: 1;
+}
+img.leave {
+    transform: translateX(-100%);
+}
+img.stay {
+    transform: translateX(100%);
+}
